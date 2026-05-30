@@ -4,6 +4,10 @@
 
   window.addEventListener('load', () => setTimeout(() => $('.preloader')?.classList.add('hidden'), 420));
 
+  const currentYear = document.querySelector('[data-current-year]');
+  if (currentYear) currentYear.textContent = String(new Date().getFullYear());
+
+
   const header = $('[data-header]');
   const burger = $('.burger');
   const nav = $('[data-nav]');
