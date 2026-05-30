@@ -500,3 +500,175 @@ p{color:var(--muted);line-height:1.65}
     font-size:clamp(32px,9vw,46px);
   }
 }
+
+
+/* v8 fixes: object boards, catalog cart usability, fixed header spacing */
+.site-header{position:fixed!important;top:16px;left:0;right:0;z-index:1000}
+.header-cart-link{font-family:inherit}
+.cart-catalog-link{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-height:48px;
+  margin-top:12px;
+  padding:0 18px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:#f5ddb4;
+  background:rgba(255,255,255,.04);
+  font-weight:900;
+}
+
+/* Main atmosphere objects: calmer, more realistic composition */
+.tea-object-board{
+  min-height:520px;
+  border-radius:42px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 48% 42%, rgba(159,209,86,.12), transparent 32%),
+    linear-gradient(145deg, rgba(255,255,255,.052), rgba(255,255,255,.018));
+  border:1px solid rgba(245,224,187,.14);
+  box-shadow:var(--shadow);
+}
+.tea-object-board::before{
+  content:"";
+  position:absolute;
+  inset:24px;
+  border-radius:34px;
+  border:1px solid rgba(245,224,187,.08);
+}
+.board-light{
+  position:absolute;
+  left:50%;
+  top:48%;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(222,183,102,.18),rgba(222,183,102,0) 66%);
+  filter:blur(10px);
+}
+.board-chaban,
+.board-mug,
+.board-teapot{
+  position:absolute;
+  z-index:2;
+  filter:drop-shadow(0 30px 34px rgba(0,0,0,.46));
+  transition:transform .35s ease;
+}
+.board-chaban{
+  width:66%;
+  left:5%;
+  bottom:8%;
+}
+.board-mug{
+  width:30%;
+  right:12%;
+  top:12%;
+  animation:softFloat 5.2s ease-in-out infinite;
+}
+.board-teapot{
+  width:33%;
+  right:9%;
+  bottom:12%;
+}
+.tea-object-board:hover .board-chaban{transform:translateY(-4px)}
+.tea-object-board:hover .board-teapot{transform:translateY(-3px) rotate(-1deg)}
+.board-caption{
+  position:absolute;
+  z-index:3;
+  max-width:210px;
+  padding:10px 13px;
+  border-radius:999px;
+  border:1px solid rgba(245,224,187,.15);
+  background:rgba(17,12,9,.76);
+  color:#f0d7aa;
+  font-size:13px;
+  font-weight:800;
+  backdrop-filter:blur(10px);
+}
+.board-caption-1{left:28px;bottom:30px}
+.board-caption-2{right:32px;top:32px}
+.board-caption-3{right:32px;bottom:32px}
+@keyframes softFloat{50%{transform:translateY(-10px)}}
+
+/* Catalog hero: compact composition that does not fight the text */
+.catalog-hero{
+  padding-top:calc(var(--header-h) + 112px)!important;
+}
+.catalog-object-board{
+  min-height:430px;
+  border-radius:40px;
+  overflow:hidden;
+  border:1px solid rgba(245,224,187,.14);
+  background:
+    radial-gradient(circle at 52% 38%, rgba(159,209,86,.14), transparent 30%),
+    linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+  box-shadow:var(--shadow);
+}
+.catalog-board-light{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:360px;
+  height:360px;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(222,183,102,.17),rgba(222,183,102,0) 66%);
+  filter:blur(10px);
+}
+.catalog-board-chaban,
+.catalog-board-mug,
+.catalog-board-teapot{
+  position:absolute;
+  z-index:2;
+  filter:drop-shadow(0 30px 34px rgba(0,0,0,.46));
+}
+.catalog-board-chaban{width:64%;left:5%;bottom:7%}
+.catalog-board-mug{width:28%;right:12%;top:10%;animation:softFloat 5.2s ease-in-out infinite}
+.catalog-board-teapot{width:32%;right:10%;bottom:10%}
+.catalog-board-note{
+  position:absolute;
+  left:24px;
+  top:24px;
+  z-index:3;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(17,12,9,.76);
+  border:1px solid rgba(245,224,187,.15);
+  color:#f3ddb4;
+  font-size:13px;
+  font-weight:900;
+}
+
+/* Make old catalog/object cards inert if cached markup appears */
+.catalog-card,.obj-card{box-shadow:none}
+
+/* Better product and cart feedback */
+.product-card .btn[data-add-cart]{position:relative}
+.product-card .btn[data-add-cart].is-added{background:linear-gradient(135deg,#b5dd72,#e6d98b)}
+
+@media (max-width:820px){
+  .site-header{top:10px}
+  .catalog-hero{padding-top:132px!important}
+}
+@media (max-width:560px){
+  .catalog-hero{padding-top:128px!important}
+  .tea-object-board{min-height:390px;border-radius:30px}
+  .tea-object-board::before{inset:14px;border-radius:24px}
+  .board-light{width:280px;height:280px}
+  .board-chaban{width:76%;left:3%;bottom:10%}
+  .board-mug{width:35%;right:6%;top:10%}
+  .board-teapot{width:38%;right:6%;bottom:14%}
+  .board-caption{font-size:11px;line-height:1.2;max-width:150px;padding:8px 10px}
+  .board-caption-1{left:18px;bottom:20px}
+  .board-caption-2{right:16px;top:18px}
+  .board-caption-3{right:16px;bottom:20px}
+
+  .catalog-object-board{min-height:330px;border-radius:30px}
+  .catalog-board-light{width:260px;height:260px}
+  .catalog-board-chaban{width:78%;left:2%;bottom:8%}
+  .catalog-board-mug{width:36%;right:6%;top:8%}
+  .catalog-board-teapot{width:39%;right:6%;bottom:10%}
+  .catalog-board-note{left:16px;top:16px;font-size:11px;max-width:210px}
+}

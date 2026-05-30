@@ -238,8 +238,9 @@
       if (found) found.qty += 1; else cart.push({ name, price, qty: 1 });
       saveCart();
       renderCart();
+      add.classList.add('is-added');
       add.textContent = 'Добавлено';
-      setTimeout(() => add.textContent = 'В корзину', 900);
+      setTimeout(() => { add.textContent = 'В корзину'; add.classList.remove('is-added'); }, 900);
     }
 
     if (e.target.closest('[data-cart-open]')) {

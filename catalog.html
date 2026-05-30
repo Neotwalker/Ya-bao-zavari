@@ -54,21 +54,12 @@
             <button class="btn btn-ghost" type="button" data-cart-open>Открыть корзину</button>
           </div>
         </div>
-        <div class="catalog-hero-objects reveal">
-          <div class="catalog-orbit orbit-a"></div>
-          <div class="catalog-orbit orbit-b"></div>
-          <div class="catalog-card catalog-card-mug">
-            <img src="assets/3d/mug-real.png" alt="Чашка чая" />
-            <span>для уютных домашних вечеров</span>
-          </div>
-          <div class="catalog-card catalog-card-teapot">
-            <img src="assets/3d/teapot-real.png" alt="Чайник" />
-            <span>для чайного ритуала</span>
-          </div>
-          <div class="catalog-card catalog-card-chaban">
-            <img src="assets/3d/chaban-real.png" alt="Чабань" />
-            <span>для красивой подачи</span>
-          </div>
+        <div class="catalog-hero-objects catalog-object-board reveal">
+          <div class="catalog-board-light" aria-hidden="true"></div>
+          <img class="catalog-board-chaban" src="assets/3d/chaban-real.png" alt="Чабань" />
+          <img class="catalog-board-mug" src="assets/3d/mug-real.png" alt="Чашка чая" />
+          <img class="catalog-board-teapot" src="assets/3d/teapot-real.png" alt="Чайник" />
+          <div class="catalog-board-note">чай · пиалы · чабани · аксессуары</div>
         </div>
       </div>
     </section>
@@ -90,42 +81,42 @@
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/logo-pack-thumb.webp" alt="Шу пуэр" />
             <span>чай</span><h3>Шу пуэр плотный</h3><p>Тёмный, глубокий и спокойный. Хорош для неторопливого вечера.</p><b>650 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Шу пуэр плотный" data-price="650">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Шу пуэр плотный" data-price="650">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/tea-table-thumb.webp" alt="Габа улун" />
             <span>чай</span><h3>Габа улун мягкая</h3><p>Для состояния «хочу выдохнуть» и спокойно посидеть с чашкой.</p><b>720 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Габа улун мягкая" data-price="720">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Габа улун мягкая" data-price="720">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/takeaway-thumb.webp" alt="Авторский чай" />
             <span>чай</span><h3>Авторский ягодный</h3><p>Понятный ягодный вкус, если не хочется начинать со сложных сортов.</p><b>490 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Авторский ягодный чай" data-price="490">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Авторский ягодный чай" data-price="490">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/bar-master-thumb.webp" alt="Светлый улун" />
             <span>чай</span><h3>Светлый улун цветочный</h3><p>Лёгкий, живой и дружелюбный чай для первого знакомства.</p><b>590 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Светлый улун цветочный" data-price="590">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Светлый улун цветочный" data-price="590">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
             <img src="assets/3d/chaban-real.png" alt="Чабань" />
             <span>аксессуар</span><h3>Чабань деревянная</h3><p>Фактурная чайная доска для домашних проливов и спокойных вечеров.</p><b>3200 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Чабань деревянная" data-price="3200">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Чабань деревянная" data-price="3200">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
             <img src="assets/3d/teapot-real.png" alt="Чайник" />
             <span>аксессуар</span><h3>Чайник глиняный</h3><p>Небольшой чайник для проливного заваривания улуна, пуэра и красного чая.</p><b>1800 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Чайник глиняный" data-price="1800">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Чайник глиняный" data-price="1800">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
             <img src="assets/images/gongfu-thumb.webp" alt="Пиалы" />
             <span>аксессуар</span><h3>Набор пиал</h3><p>Небольшие чаши для уютной домашней дегустации.</p><b>950 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Набор пиал" data-price="950">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Набор пиал" data-price="950">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="set">
             <img src="assets/images/games-thumb.webp" alt="Подарочный набор" />
             <span>набор</span><h3>Стартовый чайный набор</h3><p>Чай, пиалы и базовый аксессуар — хорошая отправная точка для дома.</p><b>2600 ₽</b>
-            <button class="btn btn-primary" data-add-cart data-name="Стартовый чайный набор" data-price="2600">В корзину</button>
+            <button class="btn btn-primary" type="button" data-add-cart data-name="Стартовый чайный набор" data-price="2600">В корзину</button>
           </article>
         </div>
       </div>
