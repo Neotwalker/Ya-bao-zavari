@@ -54,10 +54,9 @@
           <div class="eyebrow"><span></span> чайный клуб на Кировке</div>
           <h1>Место, где чай становится поводом замедлиться</h1>
           <p>Китайский чай, чайные церемонии, настолки и уютные вечера в тёплом полуподвальном пространстве на Кирова, 94. Если хочется спокойно посидеть, прийти компанией или выбрать чай домой — вам сюда.</p>
-          <div class="hero-actions">
+          <div class="hero-actions hero-actions-main">
             <button class="btn btn-primary" type="button" data-open-modal="ceremony">Записаться на церемонию</button>
             <button class="btn btn-ghost" type="button" data-open-modal="table">Забронировать столик</button>
-            <a href="catalog.html" class="btn btn-ghost">Каталог чая</a>
           </div>
           <div class="stats">
             <div><b>5.0</b><span>рейтинг гостей</span></div>
@@ -94,8 +93,8 @@
       <div class="container objects-grid">
         <div class="objects-copy reveal">
           <div class="eyebrow"><span></span> детали атмосферы</div>
-          <h2>Предметы, которые делают чайный вечер настоящим</h2>
-          <p>В чайной всё строится на простых, но очень ощутимых деталях: горячая чашка, пар над свежезаваренным чаем, тяжёлый глиняный чайник и живая фактура деревянной чабани. Именно эти вещи создают то самое чувство уюта, ради которого сюда возвращаются снова.</p>
+          <h2>Чабань, чайник и горячая чашка — из этого начинается вечер</h2>
+          <p>Пар над чашкой, тяжёлый глиняный чайник и живая фактура дерева создают ощущение, что время здесь идёт медленнее. Можно просто сесть, выдохнуть и довериться чаю.</p>
         </div>
         <div class="objects-stage reveal" aria-label="Чайные предметы">
           <div class="stage-glow"></div>
@@ -112,6 +111,20 @@
             <span>Глиняный чайник</span>
           </div>
           <div class="stage-quote">Три простые вещи, из которых собирается тёплый чайный вечер.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tea-home" id="tea-home">
+      <div class="container tea-home-card reveal">
+        <div>
+          <div class="eyebrow"><span></span> чай домой</div>
+          <h2>Соберите чайный набор для себя или в подарок</h2>
+          <p>Пуэр, улун, габа, авторские чаи, пиалы и чабани — выберите то, что хочется забрать домой, добавьте в корзину и отправьте заявку на доставку.</p>
+        </div>
+        <div class="tea-home-actions">
+          <a class="btn btn-primary" href="catalog.html">Перейти в каталог</a>
+          <a class="btn btn-ghost" href="catalog.html#catalog">Посмотреть товары</a>
         </div>
       </div>
     </section>
@@ -181,8 +194,8 @@
           <h2>Выбирайте не сорт, а ощущение</h2>
         </div>
         <div class="catalog-teaser reveal">
-          <a href="catalog.html" class="btn btn-primary">Перейти в интернет-каталог</a>
-          <p>Чай и аксессуары можно добавить в корзину и оформить доставку прямо на сайте.</p>
+          <a href="catalog.html" class="btn btn-primary">Чай домой и подарки</a>
+          <p>Соберите заказ из чая и аксессуаров — для себя, компании или подарка.</p>
         </div>
         <div class="menu-tabs reveal" role="tablist" aria-label="Фильтр меню">
           <button class="active" data-filter="all">всё</button>
@@ -209,9 +222,9 @@
           <img src="assets/images/tea-table.webp" alt="Чайник на деревянном столе" />
         </div>
         <div class="experience-copy reveal">
-          <div class="eyebrow"><span></span> интерактивная идея</div>
-          <h2>Можно подобрать формат визита прямо на сайте</h2>
-          <p>Небольшой интерактив помогает быстро понять, что подойдёт именно вам: тихий вечер, свидание, посиделки компанией или спокойная работа с ноутбуком.</p>
+          <div class="eyebrow"><span></span> под настроение</div>
+          <h2>Подберём формат под ваш вечер</h2>
+          <p>Хотите тишины, свидание, встречу с друзьями или место для работы с ноутбуком? Выберите настроение — подскажем, как лучше провести время в чайной.</p>
           <div class="mood-picker" data-moods>
             <button data-mood="calm">хочу тишины</button>
             <button data-mood="date">для свидания</button>
@@ -230,12 +243,31 @@
           <h2>Тёплый свет, дерево и чайные детали</h2>
         </div>
         <div class="gallery-grid" data-gallery>
-          <button class="gallery-item reveal" data-src="assets/images/lights.webp"><img src="assets/images/lights-thumb.webp" alt="Тёплый свет и растения" /></button>
-          <button class="gallery-item reveal" data-src="assets/images/bar-master.webp"><img src="assets/images/bar-master-thumb.webp" alt="Барная стойка и чайный мастер" /></button>
-          <button class="gallery-item reveal" data-src="assets/images/games.webp"><img src="assets/images/games-thumb.webp" alt="Настольные игры" /></button>
-          <button class="gallery-item reveal" data-src="assets/images/tea-table.webp"><img src="assets/images/tea-table-thumb.webp" alt="Чайный стол" /></button>
-          <button class="gallery-item reveal" data-src="assets/images/logo-pack.webp"><img src="assets/images/logo-pack-thumb.webp" alt="Пакет с логотипом" /></button>
-          <button class="gallery-item reveal" data-src="assets/images/interior-wide.webp"><img src="assets/images/interior-wide-thumb.webp" alt="Интерьер чайной" /></button>
+          <button class="gallery-item reveal" data-src="assets/images/lights.webp"><img src="assets/images/lights-thumb.webp" alt="Тёплый свет и растения" /><span>Тёплый свет</span></button>
+          <button class="gallery-item reveal" data-src="assets/images/bar-master.webp"><img src="assets/images/bar-master-thumb.webp" alt="Барная стойка и чайный мастер" /><span>Барная зона</span></button>
+          <button class="gallery-item reveal" data-src="assets/images/games.webp"><img src="assets/images/games-thumb.webp" alt="Настольные игры" /><span>Настолки</span></button>
+          <button class="gallery-item reveal" data-src="assets/images/tea-table.webp"><img src="assets/images/tea-table-thumb.webp" alt="Чайный стол" /><span>Чайный стол</span></button>
+          <button class="gallery-item reveal" data-src="assets/images/logo-pack.webp"><img src="assets/images/logo-pack-thumb.webp" alt="Пакет с логотипом" /><span>Чай с собой</span></button>
+          <button class="gallery-item reveal" data-src="assets/images/interior-wide.webp"><img src="assets/images/interior-wide-thumb.webp" alt="Интерьер чайной" /><span>Интерьер</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow"><span></span> отзывы гостей</div>
+          <h2>Чаще всего говорят про атмосферу</h2>
+          <p>Гости отмечают уют, чайных мастеров, настолки и ощущение места, куда хочется возвращаться.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal"><p>«Очень уютно, хочется возвращаться. Внутри спокойно, тепло и по-настоящему атмосферно».</p><span>гость чайной</span></article>
+          <article class="review-card reveal"><p>«Помогли выбрать чай, хотя я почти не разбирался. Всё объяснили просто и без снобизма».</p><span>первый визит</span></article>
+          <article class="review-card reveal"><p>«Отличное место для компании: чай, настолки и разговоры — вечер проходит незаметно».</p><span>вечер с друзьями</span></article>
+          <article class="review-card reveal"><p>«Чайная церемония — отдельный опыт. Хороший вариант для свидания или спокойного вечера».</p><span>чайная церемония</span></article>
+        </div>
+        <div class="reviews-action reveal">
+          <a class="btn btn-ghost" href="https://2gis.ru/chelyabinsk/geo/70000001110715460" target="_blank" rel="noopener">Смотреть отзывы в 2ГИС</a>
         </div>
       </div>
     </section>
@@ -264,7 +296,7 @@
         <div class="contact-info reveal">
           <div class="eyebrow"><span></span> как найти</div>
           <h2>Кирова, 94<br />Челябинск</h2>
-          <p>Перед визитом можно сразу открыть маршрут в удобной карте. Так проще найти вход, проверить дорогу и не отвлекаться, когда уже хочется чая.</p>
+          <p>Перед визитом можно сразу открыть маршрут в удобной карте. Если не сразу нашли вход — ориентируйтесь по 2ГИС или Яндекс Картам: так проще сориентироваться на месте.</p>
           <div class="contact-meta">
             <span>Чай с собой: от 200 ₽</span>
             <span>Церемонии: от 2500 ₽</span>
@@ -322,7 +354,7 @@
             </select>
           </div>
         </label>
-        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Я соглашаюсь на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
+        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Согласен на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
         <button class="btn btn-primary" type="submit" disabled>Сформировать заявку</button>
         <small data-request-status>После отправки появится готовый текст заявки для WhatsApp.</small>
       </form>
@@ -350,7 +382,7 @@
             </select>
           </div>
         </label>
-        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Я соглашаюсь на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
+        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Согласен на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
         <button class="btn btn-primary" type="submit" disabled>Сформировать бронь</button>
         <small data-request-status>После отправки появится готовый текст брони для WhatsApp.</small>
       </form>
