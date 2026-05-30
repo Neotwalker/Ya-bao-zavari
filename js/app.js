@@ -290,6 +290,16 @@
     showGeneratedMessage(form, message, 'Заказ сформирован. Его можно скопировать или отправить через WhatsApp.');
   });
 
+  // consent checkboxes: disable submit until agreed
+  $$('form').forEach(form => {
+    const consent = form.querySelector('[data-consent]');
+    const submit = form.querySelector('button[type="submit"]');
+    if (!consent || !submit) return;
+    const sync = () => { submit.disabled = !consent.checked; };
+    sync();
+    consent.addEventListener('change', sync);
+  });
+
   // years
   $$('[data-current-year]').forEach(el => el.textContent = String(new Date().getFullYear()));
 })();

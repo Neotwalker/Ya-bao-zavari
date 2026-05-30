@@ -36,7 +36,7 @@
           <span data-cart-count>0</span>
         </button>
         <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
-          <span></span><span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
@@ -55,9 +55,20 @@
           </div>
         </div>
         <div class="catalog-hero-objects reveal">
-          <img src="assets/3d/mug-real.png" alt="Чашка чая" />
-          <img src="assets/3d/teapot-real.png" alt="Чайник" />
-          <img src="assets/3d/chaban-real.png" alt="Чабань" />
+          <div class="catalog-orbit orbit-a"></div>
+          <div class="catalog-orbit orbit-b"></div>
+          <div class="catalog-card catalog-card-mug">
+            <img src="assets/3d/mug-real.png" alt="Чашка чая" />
+            <span>для уютных домашних вечеров</span>
+          </div>
+          <div class="catalog-card catalog-card-teapot">
+            <img src="assets/3d/teapot-real.png" alt="Чайник" />
+            <span>для чайного ритуала</span>
+          </div>
+          <div class="catalog-card catalog-card-chaban">
+            <img src="assets/3d/chaban-real.png" alt="Чабань" />
+            <span>для красивой подачи</span>
+          </div>
         </div>
       </div>
     </section>
@@ -134,7 +145,8 @@
         <label><span>Телефон или Telegram</span><input name="contact" type="text" placeholder="+7 или @username" required /></label>
         <label><span>Адрес доставки</span><input name="address" type="text" placeholder="Улица, дом, квартира" required /></label>
         <label><span>Комментарий</span><input name="comment" type="text" placeholder="Домофон, время, пожелания" /></label>
-        <button class="btn btn-primary" type="submit">Сформировать заказ</button>
+        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Я соглашаюсь на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
+        <button class="btn btn-primary" type="submit" disabled>Сформировать заказ</button>
         <small data-delivery-status>После отправки появится текст заказа для WhatsApp.</small>
       </form>
     </div>

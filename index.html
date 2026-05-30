@@ -38,7 +38,7 @@
           <span data-cart-count>0</span>
         </a>
         <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
-          <span></span><span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
@@ -94,13 +94,24 @@
       <div class="container objects-grid">
         <div class="objects-copy reveal">
           <div class="eyebrow"><span></span> детали атмосферы</div>
-          <h2>Настоящие предметы чайной, а не мультяшные иконки</h2>
-          <p>На сайте используются визуалы, которые ближе к реальным предметам из чайной: горячая чашка, фактурная деревянная чабань и тёмный глиняный чайник. За счёт этого страница выглядит теплее и убедительнее.</p>
+          <h2>Предметы, которые делают чайный вечер настоящим</h2>
+          <p>В чайной всё строится на простых, но очень ощутимых деталях: горячая чашка, пар над свежезаваренным чаем, тяжёлый глиняный чайник и живая фактура деревянной чабани. Именно эти вещи создают то самое чувство уюта, ради которого сюда возвращаются снова.</p>
         </div>
         <div class="objects-stage reveal" aria-label="Чайные предметы">
-          <img class="obj obj-mug" src="assets/3d/mug-real.png" alt="Чашка чая" />
-          <img class="obj obj-chaban" src="assets/3d/chaban-real.png" alt="Деревянная чабань" />
-          <img class="obj obj-teapot" src="assets/3d/teapot-real.png" alt="Глиняный чайник" />
+          <div class="stage-glow"></div>
+          <div class="obj-card card-chaban">
+            <img class="obj obj-chaban" src="assets/3d/chaban-real.png" alt="Деревянная чабань" />
+            <span>Чабань</span>
+          </div>
+          <div class="obj-card card-mug">
+            <img class="obj obj-mug" src="assets/3d/mug-real.png" alt="Чашка чая" />
+            <span>Чашка с горячим чаем</span>
+          </div>
+          <div class="obj-card card-teapot">
+            <img class="obj obj-teapot" src="assets/3d/teapot-real.png" alt="Глиняный чайник" />
+            <span>Глиняный чайник</span>
+          </div>
+          <div class="stage-quote">Три простые вещи, из которых собирается тёплый чайный вечер.</div>
         </div>
       </div>
     </section>
@@ -311,7 +322,8 @@
             </select>
           </div>
         </label>
-        <button class="btn btn-primary" type="submit">Сформировать заявку</button>
+        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Я соглашаюсь на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
+        <button class="btn btn-primary" type="submit" disabled>Сформировать заявку</button>
         <small data-request-status>После отправки появится готовый текст заявки для WhatsApp.</small>
       </form>
     </div>
@@ -338,7 +350,8 @@
             </select>
           </div>
         </label>
-        <button class="btn btn-primary" type="submit">Сформировать бронь</button>
+        <label class="consent-check"><input type="checkbox" name="consent" data-consent required /> <span>Я соглашаюсь на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a>.</span></label>
+        <button class="btn btn-primary" type="submit" disabled>Сформировать бронь</button>
         <small data-request-status>После отправки появится готовый текст брони для WhatsApp.</small>
       </form>
     </div>
