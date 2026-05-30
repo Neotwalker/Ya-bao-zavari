@@ -15,6 +15,16 @@
     <a class="logo" href="index.html#top" aria-label="Я Бао Завари">
       <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
     </a>
+    <div class="header-actions" aria-label="Быстрые действия">
+      <a class="header-phone header-phone-desktop" href="tel:+79995847290">+7 999 584-72-90</a>
+      <a class="header-icon header-phone-mobile" href="tel:+79995847290" aria-label="Позвонить в Я Бао Завари">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
+      </a>
+      <button class="header-icon header-cart" type="button" data-cart-open aria-label="Открыть корзину">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.2 6l.94 2h7.45c.75 0 1.41.41 1.75 1.03L21 3H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 14.37 5.48 16 7 16h12v-2H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03L21 4H5.42L4.48 2H1v2h2l4.2 8.84L6.15 14.75C5.43 16.07 6.39 18 7.9 18H19v-2H7.9l1.1-2H17c.75 0 1.41-.41 1.75-1.03L22.5 6H7.2Z"/></svg>
+        <span data-cart-count>0</span>
+      </button>
+    </div>
     <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" data-nav>
       <a href="index.html#rituals">Форматы</a>
@@ -23,8 +33,6 @@
       <a href="index.html#gallery">Атмосфера</a>
       <a href="index.html#contacts">Контакты</a>
     </nav>
-    <a class="header-phone" href="tel:+79995847290">+7 999 584-72-90</a>
-    <button class="header-cta" type="button" data-cart-open>Корзина <span data-cart-count>0</span></button>
   </header>
 
   <main id="top">
@@ -33,7 +41,7 @@
         <div class="reveal">
           <div class="eyebrow"><span></span> интернет-каталог</div>
           <h1>Чай и аксессуары для домашнего ритуала</h1>
-          <p>Выберите чай, добавьте аксессуары и оформите заявку на доставку. Корзина работает прямо на сайте без CMS и готова для подключения к Telegram, CRM или форме.</p>
+          <p>Выберите чай для дома или подарок, добавьте аксессуары и оставьте заявку на доставку. Мы уточним наличие, поможем с выбором и аккуратно соберём заказ.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#catalog">Выбрать товары</a>
             <button class="btn btn-ghost" type="button" data-cart-open>Открыть корзину</button>
@@ -119,7 +127,7 @@
         <label><span>Адрес доставки</span><input name="address" type="text" placeholder="Улица, дом, квартира" required /></label>
         <label><span>Комментарий</span><input name="comment" type="text" placeholder="Домофон, время, пожелания" /></label>
         <button class="btn btn-primary" type="submit">Сформировать заказ</button>
-        <small data-delivery-status>После отправки появится текст заказа для администратора.</small>
+        <small data-delivery-status>После отправки появится текст заказа для WhatsApp.</small>
       </form>
     </div>
   </aside>

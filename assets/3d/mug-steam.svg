@@ -1,3 +1,24 @@
-<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs><radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(246 220) rotate(48) scale(260 350)"><stop stop-color="#FFE6A6"/><stop offset=".38" stop-color="#B67635"/><stop offset="1" stop-color="#241108"/></radialGradient><radialGradient id="tea" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(290 195) scale(135 55)"><stop stop-color="#B85C25"/><stop offset="1" stop-color="#261007"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="10"/></filter><linearGradient id="steam" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#FFF0C2" stop-opacity="0"/><stop offset=".5" stop-color="#FFF0C2" stop-opacity=".65"/><stop offset="1" stop-color="#FFF0C2" stop-opacity="0"/></linearGradient></defs>
-<ellipse cx="302" cy="543" rx="184" ry="40" fill="#000" opacity=".32" filter="url(#blur)"/><path d="M158 207h305l-39 278c-8 56-54 97-110 97h-9c-57 0-104-42-111-99l-36-276Z" fill="url(#g1)"/><path d="M158 207c0-43 68-78 153-78s152 35 152 78-68 78-152 78-153-35-153-78Z" fill="#FFE2A0"/><ellipse cx="311" cy="205" rx="121" ry="55" fill="url(#tea)"/><path d="M434 264c70-12 118 20 118 77 0 67-68 104-143 78l13-55c38 14 68 1 68-25 0-24-24-37-62-27l6-48Z" fill="#7D4B25"/><path d="M435 262c72-9 117 21 117 78 0 67-67 104-142 79" stroke="#F2C778" stroke-width="26" stroke-linecap="round" opacity=".62"/><path d="M257 110c-36-54 28-85 2-132" stroke="url(#steam)" stroke-width="16" stroke-linecap="round"/><path d="M320 103c-45-68 41-98 7-160" stroke="url(#steam)" stroke-width="16" stroke-linecap="round" opacity=".9"/><path d="M382 116c-32-56 37-84 16-132" stroke="url(#steam)" stroke-width="14" stroke-linecap="round" opacity=".72"/><circle cx="220" cy="272" r="22" fill="#FFF4C8" opacity=".32"/><path d="M207 245c29-32 83-42 142-33" stroke="#FFF1C1" stroke-width="16" stroke-linecap="round" opacity=".42"/></svg>
+<svg width="760" height="760" viewBox="0 0 760 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="tea" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 256) rotate(91) scale(108 226)"><stop stop-color="#F4B86D"/><stop offset=".36" stop-color="#8F3F17"/><stop offset="1" stop-color="#2B1208"/></radialGradient>
+<linearGradient id="ceramic" x1="205" y1="260" x2="528" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#F6E6C0"/><stop offset=".22" stop-color="#C89352"/><stop offset=".5" stop-color="#7A421F"/><stop offset=".78" stop-color="#2D1710"/><stop offset="1" stop-color="#0F0907"/></linearGradient>
+<linearGradient id="rim" x1="160" y1="210" x2="560" y2="330"><stop stop-color="#FFF1CA"/><stop offset=".28" stop-color="#CB9B61"/><stop offset=".62" stop-color="#4B2413"/><stop offset="1" stop-color="#E7C285"/></linearGradient>
+<filter id="shadow" x="80" y="430" width="600" height="240" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="steamBlur" x="120" y="0" width="500" height="360" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<ellipse cx="378" cy="574" rx="238" ry="58" fill="#050302" opacity=".58" filter="url(#shadow)"/>
+<path d="M207 292c11 150 43 283 162 292 116 9 171-105 188-294H207Z" fill="url(#ceramic)"/>
+<path d="M211 294c18 48 76 84 164 84 91 0 154-32 177-83-14 170-67 288-183 279-112-9-145-137-158-280Z" fill="url(#ceramic)"/>
+<ellipse cx="382" cy="289" rx="180" ry="70" fill="url(#rim)"/>
+<ellipse cx="382" cy="286" rx="142" ry="45" fill="#271208"/>
+<ellipse cx="382" cy="282" rx="118" ry="33" fill="url(#tea)"/>
+<path d="M545 337c79-14 116 35 102 88-16 62-77 92-141 75l11-54c42 13 78-9 86-36 8-28-13-47-62-36l4-37Z" fill="#4B2815"/>
+<path d="M553 355c56-9 80 21 71 54-9 35-48 55-91 45l7-33c28 7 51-4 56-20 5-17-10-27-45-20l2-26Z" fill="#120907" opacity=".9"/>
+<path d="M234 344c34 61 110 92 222 66" stroke="#FFE3A9" stroke-width="9" stroke-linecap="round" opacity=".35"/>
+<path d="M268 501c47 41 120 53 193 18" stroke="#1A0E08" stroke-width="18" stroke-linecap="round" opacity=".22"/>
+<g filter="url(#steamBlur)" opacity=".72" stroke-linecap="round">
+<path d="M314 217c-42-57 55-81 8-143" stroke="#FFF2CC" stroke-width="10" opacity=".72"/>
+<path d="M392 221c-56-75 69-91 16-175" stroke="#FFF7DD" stroke-width="12" opacity=".6"/>
+<path d="M462 224c-35-56 51-85 5-143" stroke="#FFE5B2" stroke-width="8" opacity=".45"/>
+</g>
+</svg>

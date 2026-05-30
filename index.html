@@ -17,17 +17,26 @@
     <a class="logo" href="#top" aria-label="Я Бао Завари">
       <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
     </a>
+    <div class="header-actions" aria-label="Быстрые действия">
+      <a class="header-phone header-phone-desktop" href="tel:+79995847290">+7 999 584-72-90</a>
+      <a class="header-icon header-phone-mobile" href="tel:+79995847290" aria-label="Позвонить в Я Бао Завари">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
+      </a>
+      <a class="header-icon header-cart" href="catalog.html#catalog" aria-label="Открыть корзину">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.2 6l.94 2h7.45c.75 0 1.41.41 1.75 1.03L21 3H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 14.37 5.48 16 7 16h12v-2H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03L21 4H5.42L4.48 2H1v2h2l4.2 8.84L6.15 14.75C5.43 16.07 6.39 18 7.9 18H19v-2H7.9l1.1-2H17c.75 0 1.41-.41 1.75-1.03L22.5 6H7.2Z"/></svg>
+        <span data-cart-count>0</span>
+      </a>
+    </div>
     <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" data-nav>
       <a href="#rituals">Форматы</a>
+      <a href="#founder">Основатель</a>
       <a href="#ceremony">Церемонии</a>
       <a href="#menu">Меню</a>
       <a href="catalog.html">Каталог</a>
       <a href="#gallery">Атмосфера</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a class="header-phone" href="tel:+79995847290">+7 999 584-72-90</a>
-    <a class="header-cta" href="#booking">Записаться</a>
   </header>
 
   <main id="top">
@@ -72,9 +81,29 @@
       <div class="container split">
         <div class="section-head reveal">
           <div class="eyebrow"><span></span> первое впечатление</div>
-          <h2>Чайный клуб, куда приходят не спешить</h2>
+          <h2>Чайный клуб, куда приходят за своим вечером</h2>
         </div>
-        <p class="big-text reveal">Здесь китайский чай становится поводом встретиться, выдохнуть и попробовать новый вкус. Без ресторанной строгости — только тёплый свет, дерево, чайная доска, восточные детали и живое общение за столом.</p>
+        <p class="big-text reveal">Приходите, даже если не разбираетесь в китайском чае. Мы поможем выбрать вкус, заварим спокойно и по‑человечески расскажем, что происходит в чашке. Можно прийти одному, на свидание, с друзьями или просто забрать чай с собой.</p>
+      </div>
+    </section>
+
+    <section class="section founder" id="founder">
+      <div class="container founder-grid">
+        <div class="founder-photo reveal" data-tilt>
+          <img src="assets/images/founder-evgeniy-korkin.webp" alt="Евгений Коркин, основатель Я Бао Завари" loading="lazy" />
+          <div class="founder-badge">основатель</div>
+        </div>
+        <div class="founder-content reveal">
+          <div class="eyebrow"><span></span> знакомьтесь</div>
+          <h2>Евгений Коркин</h2>
+          <p class="big-text small">Человек, который собирает вокруг чая людей, разговоры и уютные вечера.</p>
+          <p>«Я Бао Завари» — не про пафос и сложные слова. Это место, где можно сесть за стол, попробовать хороший чай и почувствовать, что тебе здесь рады. Евгений делает чайную живой: с характером, юмором, настолками, тёплым светом и вниманием к гостям.</p>
+          <div class="founder-notes">
+            <span>поможем выбрать чай без снобизма</span>
+            <span>расскажем про вкус простыми словами</span>
+            <span>создадим вечер, в который хочется вернуться</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -82,8 +111,8 @@
       <div class="container three-d-grid">
         <div class="three-d-copy reveal">
           <div class="eyebrow"><span></span> 3D-атмосфера</div>
-          <h2>Предметы, которые сразу говорят: здесь заваривают по-настоящему</h2>
-          <p>Для сайта добавлены лёгкие 3D-стилизованные объекты без фона: чашка с паром, чабань и чайник. Они поддерживают атмосферу, но не спорят с настоящими фотографиями чайной.</p>
+          <h2>Чайная доска, глиняный чайник и чашка с живым паром</h2>
+          <p>Визуальные элементы собраны по реальным предметам чайной: дерево с неровной фактурой, тёмная глина, тёплые блики и пар над чашкой. Они добавляют глубину, но главными остаются настоящие фото и атмосфера места.</p>
         </div>
         <div class="three-d-objects reveal" aria-label="3D-объекты чайной тематики">
           <img class="obj obj-mug" src="assets/3d/mug-steam.svg" alt="3D чашка с дымом" />
@@ -164,15 +193,15 @@
         </div>
         <div class="experience-content reveal">
           <div class="eyebrow"><span></span> интерактивная идея</div>
-          <h2>На сайте можно сделать мини-подбор чая</h2>
-          <p>Пользователь выбирает настроение, а интерфейс показывает подходящий формат: с собой, за столом, церемония или чай домой.</p>
+          <h2>Подберём чай под настроение</h2>
+          <p>Не нужно знать названия сортов. Просто выберите, зачем вы пришли: выдохнуть, провести свидание, собраться компанией или поработать спокойно.</p>
           <div class="mood-picker" data-moods>
             <button data-mood="calm">хочу тишины</button>
             <button data-mood="date">для свидания</button>
             <button data-mood="company">иду компанией</button>
             <button data-mood="work">с ноутбуком</button>
           </div>
-          <div class="mood-result" data-mood-result>Выбери настроение — подберём формат визита.</div>
+          <div class="mood-result" data-mood-result>Выберите настроение — мы подскажем формат визита.</div>
         </div>
       </div>
     </section>
@@ -198,14 +227,14 @@
       <div class="container booking-card reveal">
         <div>
           <div class="eyebrow"><span></span> запись</div>
-          <h2>Забронируй вечер за чайным столом</h2>
-          <p>Выберите быстрый сценарий: чайная церемония или столик для компании. Формы открываются в модальном окне и формируют готовую заявку для администратора.</p>
+          <h2>Забронируйте вечер за чайным столом</h2>
+          <p>Напишите, когда хотите прийти и сколько вас будет. Мы подскажем свободное время, поможем с форматом и подготовим стол под ваш вечер.</p>
           <div class="booking-actions"><button class="btn btn-primary" type="button" data-open-modal="ceremony">Заявка на церемонию</button><button class="btn btn-ghost" type="button" data-open-modal="table">Забронировать столик</button></div>
         </div>
         <div class="booking-side-card">
           <img src="assets/3d/mug-steam.svg" alt="Чашка с паром" />
-          <b>Заявка без перезагрузки страницы</b>
-          <p>После заполнения можно скопировать текст заявки или сразу открыть WhatsApp/Telegram, если подключить реальные ссылки.</p>
+          <b>Быстрая заявка</b>
+          <p>Заполните пару полей — сайт соберёт понятное сообщение, которое можно сразу отправить нам в WhatsApp.</p>
         </div>
       </div>
     </section>
@@ -260,14 +289,14 @@
       <button class="modal-close" type="button" data-modal-close aria-label="Закрыть">×</button>
       <div class="eyebrow"><span></span> заявка</div>
       <h2 id="ceremony-title">Чайная церемония</h2>
-      <p>Оставьте контакты, удобный день и количество гостей. Форма сформирует сообщение для администратора.</p>
+      <p>Оставьте контакты, удобный день и количество гостей. Мы свяжемся и поможем подобрать чай под ваш вечер.</p>
       <form class="form modal-form" data-request-form data-request-type="Чайная церемония">
         <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required /></label>
         <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="+7 или @username" required /></label>
         <label><span>Дата и время</span><input type="text" name="date" placeholder="Например: пятница, 19:00" /></label>
         <label><span>Гостей</span><select name="guests"><option>1 человек</option><option>2 человека</option><option>3–4 человека</option><option>5+ человек</option></select></label>
         <button class="btn btn-primary" type="submit">Сформировать заявку</button>
-        <small data-request-status>После отправки появится готовый текст заявки.</small>
+        <small data-request-status>После отправки появится готовый текст заявки для WhatsApp.</small>
       </form>
     </div>
   </div>
@@ -278,14 +307,14 @@
       <button class="modal-close" type="button" data-modal-close aria-label="Закрыть">×</button>
       <div class="eyebrow"><span></span> бронь</div>
       <h2 id="table-title">Забронировать столик</h2>
-      <p>Подойдёт для компании, настолок, работы с ноутбуком или спокойного вечера за чаем.</p>
+      <p>Подойдёт для компании, настолок, работы с ноутбуком или спокойного вечера за чаем. Просто напишите, когда хотите прийти.</p>
       <form class="form modal-form" data-request-form data-request-type="Бронь столика">
         <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required /></label>
         <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="+7 или @username" required /></label>
         <label><span>Когда прийти</span><input type="text" name="date" placeholder="Сегодня / завтра / дата и время" /></label>
         <label><span>Гостей</span><select name="guests"><option>1–2 гостя</option><option>3–4 гостя</option><option>5–6 гостей</option><option>7+ гостей</option></select></label>
         <button class="btn btn-primary" type="submit">Сформировать бронь</button>
-        <small data-request-status>После отправки появится готовый текст брони.</small>
+        <small data-request-status>После отправки появится готовый текст брони для WhatsApp.</small>
       </form>
     </div>
   </div>
