@@ -82,8 +82,41 @@
 
   $('[data-form]')?.addEventListener('submit', e => {
     e.preventDefault();
+    const form = e.currentTarget;
     const status = $('[data-form-status]');
-    status.textContent = 'Заявка собрана в демо-режиме. Подключите Telegram, WhatsApp, Formspree или backend.';
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const contact = String(data.get('contact') || '').trim();
+    const format = String(data.get('format') || '').trim();
+    const message = `Здравствуйте! Хочу оставить заявку в «Я Бао Завари».\nИмя: ${name}\nКонтакт: ${contact}\nФормат: ${format}`;
+
+    let box = form.querySelector('.form-message');
+    if (!box) {
+      box = document.createElement('div');
+      box.className = 'form-message';
+      form.appendChild(box);
+    }
+    box.textContent = message;
+
+    let copy = form.querySelector('.copy-request');
+    if (!copy) {
+      copy = document.createElement('button');
+      copy.type = 'button';
+      copy.className = 'copy-request';
+      copy.textContent = 'Скопировать заявку';
+      form.appendChild(copy);
+    }
+    copy.onclick = async () => {
+      try {
+        await navigator.clipboard.writeText(message);
+        copy.textContent = 'Заявка скопирована';
+        setTimeout(() => copy.textContent = 'Скопировать заявку', 1800);
+      } catch (err) {
+        copy.textContent = 'Скопируйте текст вручную';
+      }
+    };
+
+    if (status) status.textContent = 'Заявка сформирована. Скопируйте текст и отправьте администратору в удобный мессенджер.';
   });
 
   const canvas = $('[data-steam]');

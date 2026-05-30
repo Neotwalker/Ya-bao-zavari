@@ -29,3 +29,30 @@ html{scroll-padding-top:112px}#rituals,#ceremony,#menu,#gallery,#booking,#contac
 @media (max-width:480px){
   html{scroll-padding-top:82px}#rituals,#ceremony,#menu,#gallery,#booking,#contacts{scroll-margin-top:82px}.container{width:min(100% - 24px,var(--container))}.header{top:10px;width:calc(100% - 24px);min-height:58px;padding:7px 10px;border-radius:22px}.header.scrolled{top:6px;min-height:56px}.logo{width:96px;min-width:96px}.burger{width:40px;height:40px}.nav{top:64px;border-radius:22px}.section{padding:68px 0}.hero{padding:106px 0 64px}.hero-content .eyebrow{margin-bottom:12px}h1{font-size:40px;line-height:1.02;margin-bottom:20px;letter-spacing:-.035em}h2{font-size:33px;line-height:1.04;margin-bottom:20px;letter-spacing:-.035em}h3{font-size:23px}.hero-content p,p{line-height:1.56}.hero-content p{font-size:17px}.btn{min-height:56px;padding-inline:18px;font-size:16px}.stats{grid-template-columns:1fr}.stats div{border-radius:18px}.section-head.center{text-align:left}.big-text{font-size:21px}.ritual-card b{font-size:34px}.ceremony-media img{height:360px}.price-badge{width:104px;height:104px}.price-badge span{font-size:10px}.price-badge b{font-size:21px}.check-list{margin:22px 0}.menu-tabs{display:grid;grid-template-columns:1fr 1fr}.menu-tabs button{width:100%}.phone-stack{min-height:350px}.phone-stack img{height:300px;width:64%;border-radius:22px}.phone-stack img:first-child{top:32px}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:230px}.gallery-item.wide{grid-column:auto}.booking-card{padding:22px;border-radius:26px}.form{gap:13px}.form input,.form select{border-radius:16px}.map-card{min-height:320px;border-radius:26px}.map-card b{font-size:28px;bottom:72px}.map-card p{bottom:38px}.pin{width:78px;height:78px}.pin span{inset:23px}.footer{padding-top:34px}.footer-copy p{font-size:14px}.footer-links{display:grid;gap:12px}.policy-card{padding:22px;border-radius:26px}.policy-card h1{font-size:38px}.policy-card h2{font-size:28px}.lightbox img{max-width:96vw;border-radius:18px}
 }
+
+
+/* ===== Final polish v3: less overlay, cleaner mobile, real contact block ===== */
+.contact-meta{display:grid;gap:10px;margin:24px 0 0}.contact-meta span{display:inline-flex;width:max-content;max-width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:#f4ddb0;font-size:14px}.form small{display:block;line-height:1.45;color:#d8bf91}.form .form-message{margin-top:10px;padding:14px 16px;border:1px solid rgba(117,168,67,.34);border-radius:18px;background:rgba(117,168,67,.10);color:#f8e4b7;white-space:pre-wrap}.copy-request{margin-top:10px;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.045);color:#f8e4b7;font-weight:800;cursor:pointer}.copy-request:hover{background:rgba(255,255,255,.08)}
+
+@media (min-width:1201px){.header{min-height:66px}.logo{width:118px;min-width:118px}.section[id]{padding-top:128px;margin-top:-16px}.booking,.contacts{padding-top:126px}}
+@media (max-width:1200px) and (min-width:769px){html{scroll-padding-top:100px}.section[id]{scroll-margin-top:100px}.header{min-height:62px}.logo{width:108px;min-width:108px}.section{padding:92px 0}.hero{padding-top:118px}}
+
+@media (max-width:768px){
+  /* На мобильных шапка больше не висит поверх каждого блока — это убирает наезды на заголовки при скролле. */
+  .header{position:absolute;top:12px;left:14px;right:14px;transform:none;width:auto;min-height:58px;padding:7px 10px;border-radius:22px;background:rgba(18,13,9,.68)}
+  .header.scrolled{top:12px;min-height:58px;background:rgba(18,13,9,.68)}
+  .logo{width:96px;min-width:96px}.burger{width:38px;height:38px}.burger span{margin:6px 7px}.burger.active span:first-child{transform:translateY(8px) rotate(45deg)}
+  .nav{top:66px;border-radius:22px;padding:12px}.nav a{font-size:15px;padding:11px 10px}
+  html{scroll-padding-top:28px}#rituals,#ceremony,#menu,#gallery,#booking,#contacts{scroll-margin-top:28px}
+  .hero{padding-top:112px}.section{padding:76px 0}.section-head{max-width:100%}.intro{padding-top:86px}.booking,.contacts{padding-top:86px}
+  .stats{margin-top:4px}.gallery-grid{margin-top:30px}.footer-logo img{width:126px}
+}
+
+@media (max-width:480px){
+  .header{top:10px;left:12px;right:12px;min-height:54px;padding:6px 9px;border-radius:20px}.header.scrolled{top:10px;min-height:54px}.logo{width:88px;min-width:88px}.burger{width:36px;height:36px}.nav{top:61px;border-radius:20px}
+  .hero{padding-top:98px}.section{padding:64px 0}.intro{padding-top:74px}.booking,.contacts{padding-top:78px}
+  h1{font-size:38px;line-height:1.04}h2{font-size:31px;line-height:1.06}.big-text{font-size:20px}.hero-content p{font-size:16px}.eyebrow{font-size:10px;letter-spacing:.12em}.eyebrow span{width:22px}
+  .ceremony-media img{height:330px}.phone-stack{min-height:320px}.phone-stack img{height:280px}.gallery-grid{grid-auto-rows:215px}.contact-meta span{width:100%;justify-content:center;text-align:center}.footer-links{gap:10px}.footer-links a{width:max-content}
+}
+
+@media (max-width:380px){h1{font-size:34px}h2{font-size:28px}.btn{font-size:15px}.stats b{font-size:22px}.stats span{font-size:11px}.ritual-card,.tea-menu article,.booking-card{padding:20px}.ceremony-media img{height:300px}}
