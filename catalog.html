@@ -54,12 +54,22 @@
             <button class="btn btn-ghost" type="button" data-cart-open>Открыть корзину</button>
           </div>
         </div>
-        <div class="catalog-hero-objects catalog-object-board reveal">
-          <div class="catalog-board-light" aria-hidden="true"></div>
-          <img class="catalog-board-chaban" src="assets/3d/chaban-real.png" alt="Чабань" />
-          <img class="catalog-board-mug" src="assets/3d/mug-real.png" alt="Чашка чая" />
-          <img class="catalog-board-teapot" src="assets/3d/teapot-real.png" alt="Чайник" />
-          <div class="catalog-board-note">чай · пиалы · чабани · аксессуары</div>
+        <div class="catalog-hero-objects catalog-choice-board reveal" aria-label="Категории каталога">
+          <button class="choice-card choice-tea" type="button" data-preview-filter="tea">
+            <img src="assets/3d/mug-real.png" alt="Чай" />
+            <span>Чай</span>
+            <p>пуэры, улуны, габа и авторские вкусы</p>
+          </button>
+          <button class="choice-card choice-accessory" type="button" data-preview-filter="accessory">
+            <img src="assets/3d/teapot-real.png" alt="Аксессуары" />
+            <span>Аксессуары</span>
+            <p>чайники, пиалы и чабани для дома</p>
+          </button>
+          <button class="choice-card choice-set" type="button" data-preview-filter="set">
+            <img src="assets/3d/chaban-real.png" alt="Наборы" />
+            <span>Наборы</span>
+            <p>готовые решения для подарка или первого ритуала</p>
+          </button>
         </div>
       </div>
     </section>
