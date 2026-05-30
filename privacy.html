@@ -4,35 +4,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Политика конфиденциальности — Я Бао Завари</title>
-  <meta name="description" content="Политика конфиденциальности сайта чайной Я Бао Завари." />
+  <meta name="description" content="Политика конфиденциальности сайта чайного клуба Я Бао Завари." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <header class="header privacy-header" data-header>
-    <a class="logo" href="index.html" aria-label="Я Бао Завари">
-      <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
-    </a>
-    <a class="header-cta" href="index.html#booking">Записаться</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="header-shell container-wide">
+      <a class="logo" href="index.html#top" aria-label="Я Бао Завари">
+        <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
+      </a>
+
+      <nav class="site-nav" data-nav>
+        <a href="index.html#rituals">Форматы</a>
+        <a href="index.html#founder">Основатель</a>
+        <a href="index.html#ceremony">Церемонии</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#gallery">Атмосфера</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone-desktop" href="tel:+79995847290">+7 999 584-72-90</a>
+        <a class="header-icon header-phone-mobile" href="tel:+79995847290" aria-label="Позвонить">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.2 11.2 0 0 0 3.52.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.2 2.41.56 3.52a1 1 0 0 1-.24 1.01l-2.2 2.26Z"/></svg>
+        </a>
+        <a class="header-icon header-cart-link" href="catalog.html" aria-label="Перейти в каталог">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.17 14h9.95c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 21.58 5H6.21l-.94-2H2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 8 18h12v-2H8l1.17-2Z"/></svg>
+          <span data-cart-count>0</span>
+        </a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
-  <main class="policy-page">
-    <section class="section">
-      <div class="container policy-card">
-        <div class="eyebrow"><span></span> документы</div>
-        <h1>Политика конфиденциальности</h1>
-        <p>Настоящая политика описывает, как сайт «Я Бао Завари» может обрабатывать данные пользователей при отправке заявки через форму, мессенджеры или другие способы связи.</p>
-        <h2>Какие данные могут собираться</h2>
-        <p>Имя, телефон, Telegram, выбранный формат визита и сообщение пользователя, если эти данные пользователь сам отправляет через форму или кнопку связи.</p>
-        <h2>Для чего используются данные</h2>
-        <p>Данные используются только для связи с пользователем, уточнения деталей записи, бронирования чайной церемонии или ответа на вопрос.</p>
-        <h2>Передача третьим лицам</h2>
-        <p>Данные не передаются третьим лицам, кроме сервисов, необходимых для обработки заявки: формы, мессенджеры, CRM или хостинг, если они будут подключены в рабочей версии сайта.</p>
-        <h2>Как удалить данные</h2>
-        <p>Пользователь может обратиться к администрации чайной и попросить удалить свои контактные данные из переписки или системы заявок.</p>
-        <p class="policy-note">Текст является базовой заготовкой для демо-сайта. Перед коммерческим запуском его желательно адаптировать под реальные способы приёма заявок и реквизиты владельца.</p>
-        <a class="btn btn-primary" href="index.html">Вернуться на сайт</a>
+
+  <main class="policy-page" id="top">
+    <section class="section policy-section">
+      <div class="container">
+        <div class="policy-card reveal">
+          <div class="eyebrow"><span></span> документы</div>
+          <h1>Политика конфиденциальности</h1>
+          <p>Настоящая политика описывает, как сайт «Я Бао Завари» может обрабатывать данные пользователей при отправке заявки через форму, мессенджеры или другие способы связи.</p>
+
+          <h2>Какие данные могут собираться</h2>
+          <p>Имя, телефон, Telegram, выбранный формат визита, адрес доставки и сообщение пользователя, если эти данные человек сам отправляет через форму.</p>
+
+          <h2>Для чего используются данные</h2>
+          <p>Только для связи с пользователем, уточнения деталей записи, бронирования столика, оформления доставки и ответа на вопросы по ассортименту.</p>
+
+          <h2>Передача третьим лицам</h2>
+          <p>Данные не передаются третьим лицам, кроме сервисов, которые могут быть подключены в рабочей версии сайта для обработки заявок: CRM, формы, хостинг или мессенджеры.</p>
+
+          <h2>Как удалить данные</h2>
+          <p>Пользователь может обратиться к администрации чайного клуба и попросить удалить свои контактные данные из переписки или системы заявок.</p>
+
+          <p class="policy-note">Текст является базовой заготовкой для демонстрационной версии сайта. Перед коммерческим запуском рекомендуется адаптировать его под реальные юридические данные владельца и фактический процесс обработки заявок.</p>
+          <a class="btn btn-primary" href="index.html">Вернуться на сайт</a>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a class="footer-logo" href="index.html#top" aria-label="Я Бао Завари">
+        <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="140" />
+      </a>
+      <div class="footer-copy">
+        <p>© <span data-start-year>2024</span>–<span data-current-year>2026</span> Я Бао Завари. Все права защищены.</p>
+        <p>Политика конфиденциальности и основные документы сайта.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="catalog.html">Интернет-каталог</a>
+        <a href="#top">Наверх</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

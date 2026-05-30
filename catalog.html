@@ -4,35 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Интернет-каталог — Я Бао Завари</title>
-  <meta name="description" content="Интернет-каталог чаёв и аксессуаров Я Бао Завари: пуэр, улун, габа, чабани, чайники и доставка по Челябинску." />
+  <meta name="description" content="Интернет-каталог чая и аксессуаров Я Бао Завари. Добавляйте товары в корзину и оформляйте доставку." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="catalog-page">
+<body>
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="header" data-header>
-    <a class="logo" href="index.html#top" aria-label="Я Бао Завари">
-      <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
-    </a>
-    <div class="header-actions" aria-label="Быстрые действия">
-      <a class="header-phone header-phone-desktop" href="tel:+79995847290">+7 999 584-72-90</a>
-      <a class="header-icon header-phone-mobile" href="tel:+79995847290" aria-label="Позвонить в Я Бао Завари">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
+  <header class="site-header" data-header>
+    <div class="header-shell container-wide">
+      <a class="logo" href="index.html#top" aria-label="Я Бао Завари">
+        <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="180" height="72" />
       </a>
-      <button class="header-icon header-cart" type="button" data-cart-open aria-label="Открыть корзину">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.2 6l.94 2h7.45c.75 0 1.41.41 1.75 1.03L21 3H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 14.37 5.48 16 7 16h12v-2H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03L21 4H5.42L4.48 2H1v2h2l4.2 8.84L6.15 14.75C5.43 16.07 6.39 18 7.9 18H19v-2H7.9l1.1-2H17c.75 0 1.41-.41 1.75-1.03L22.5 6H7.2Z"/></svg>
-        <span data-cart-count>0</span>
-      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="index.html#rituals">Форматы</a>
+        <a href="index.html#founder">Основатель</a>
+        <a href="index.html#ceremony">Церемонии</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#gallery">Атмосфера</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone-desktop" href="tel:+79995847290">+7 999 584-72-90</a>
+        <a class="header-icon header-phone-mobile" href="tel:+79995847290" aria-label="Позвонить">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.2 11.2 0 0 0 3.52.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.22.2 2.41.56 3.52a1 1 0 0 1-.24 1.01l-2.2 2.26Z"/></svg>
+        </a>
+        <button class="header-icon header-cart-link" type="button" data-cart-open aria-label="Открыть корзину">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.17 14h9.95c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 21.58 5H6.21l-.94-2H2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 8 18h12v-2H8l1.17-2Z"/></svg>
+          <span data-cart-count>0</span>
+        </button>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
-    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" data-nav>
-      <a href="index.html#rituals">Форматы</a>
-      <a href="index.html#ceremony">Церемонии</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="index.html#gallery">Атмосфера</a>
-      <a href="index.html#contacts">Контакты</a>
-    </nav>
   </header>
 
   <main id="top">
@@ -41,16 +48,16 @@
         <div class="reveal">
           <div class="eyebrow"><span></span> интернет-каталог</div>
           <h1>Чай и аксессуары для домашнего ритуала</h1>
-          <p>Выберите чай для дома или подарок, добавьте аксессуары и оставьте заявку на доставку. Мы уточним наличие, поможем с выбором и аккуратно соберём заказ.</p>
+          <p>Если хочется забрать любимый чай домой или собрать подарок, здесь можно быстро выбрать товары, добавить их в корзину и оформить заявку на доставку.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#catalog">Выбрать товары</a>
             <button class="btn btn-ghost" type="button" data-cart-open>Открыть корзину</button>
           </div>
         </div>
         <div class="catalog-hero-objects reveal">
-          <img src="assets/3d/mug-steam.svg" alt="3D чашка с паром" />
-          <img src="assets/3d/teapot.svg" alt="3D чайник" />
-          <img src="assets/3d/chaban.svg" alt="3D чабань" />
+          <img src="assets/3d/mug-real.png" alt="Чашка чая" />
+          <img src="assets/3d/teapot-real.png" alt="Чайник" />
+          <img src="assets/3d/chaban-real.png" alt="Чабань" />
         </div>
       </div>
     </section>
@@ -59,7 +66,7 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow"><span></span> товары</div>
-          <h2>Чаи</h2>
+          <h2>Чаи и аксессуары</h2>
         </div>
         <div class="catalog-filters reveal" data-catalog-filter>
           <button class="active" data-category="all">всё</button>
@@ -67,45 +74,46 @@
           <button data-category="accessory">аксессуары</button>
           <button data-category="set">наборы</button>
         </div>
-        <div class="product-grid" data-products>
+
+        <div class="product-grid">
           <article class="product-card reveal" data-category="tea">
-            <img src="assets/3d/mug-steam.svg" alt="Шу пуэр" />
-            <span>чай</span><h3>Шу пуэр плотный</h3><p>Тёмный, земляной, глубокий. Для вечера и спокойного настроения.</p><b>650 ₽</b>
+            <img src="assets/images/logo-pack-thumb.webp" alt="Шу пуэр" />
+            <span>чай</span><h3>Шу пуэр плотный</h3><p>Тёмный, глубокий и спокойный. Хорош для неторопливого вечера.</p><b>650 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Шу пуэр плотный" data-price="650">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/tea-table-thumb.webp" alt="Габа улун" />
-            <span>чай</span><h3>Габа улун мягкая</h3><p>Мягкий чай для выдоха, неспешной работы и вечерних разговоров.</p><b>720 ₽</b>
+            <span>чай</span><h3>Габа улун мягкая</h3><p>Для состояния «хочу выдохнуть» и спокойно посидеть с чашкой.</p><b>720 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Габа улун мягкая" data-price="720">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
             <img src="assets/images/takeaway-thumb.webp" alt="Авторский чай" />
-            <span>чай</span><h3>Авторский ягодный</h3><p>Понятный сладковатый вкус с ягодами и травяным послевкусием.</p><b>490 ₽</b>
+            <span>чай</span><h3>Авторский ягодный</h3><p>Понятный ягодный вкус, если не хочется начинать со сложных сортов.</p><b>490 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Авторский ягодный чай" data-price="490">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="tea">
-            <img src="assets/images/logo-pack-thumb.webp" alt="Пакет чая" />
-            <span>чай</span><h3>Светлый улун цветочный</h3><p>Лёгкий старт для знакомства с китайским чаем.</p><b>590 ₽</b>
+            <img src="assets/images/bar-master-thumb.webp" alt="Светлый улун" />
+            <span>чай</span><h3>Светлый улун цветочный</h3><p>Лёгкий, живой и дружелюбный чай для первого знакомства.</p><b>590 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Светлый улун цветочный" data-price="590">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
-            <img src="assets/3d/chaban.svg" alt="Чабань" />
-            <span>аксессуар</span><h3>Чабань деревянная</h3><p>Чайная доска для проливов и домашней церемонии.</p><b>3200 ₽</b>
+            <img src="assets/3d/chaban-real.png" alt="Чабань" />
+            <span>аксессуар</span><h3>Чабань деревянная</h3><p>Фактурная чайная доска для домашних проливов и спокойных вечеров.</p><b>3200 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Чабань деревянная" data-price="3200">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
-            <img src="assets/3d/teapot.svg" alt="Чайник" />
-            <span>аксессуар</span><h3>Чайник глиняный</h3><p>Для проливного заваривания улуна, пуэра и красного чая.</p><b>1800 ₽</b>
+            <img src="assets/3d/teapot-real.png" alt="Чайник" />
+            <span>аксессуар</span><h3>Чайник глиняный</h3><p>Небольшой чайник для проливного заваривания улуна, пуэра и красного чая.</p><b>1800 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Чайник глиняный" data-price="1800">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="accessory">
             <img src="assets/images/gongfu-thumb.webp" alt="Пиалы" />
-            <span>аксессуар</span><h3>Набор пиал</h3><p>Небольшие чаши для дегустации и церемоний дома.</p><b>950 ₽</b>
+            <span>аксессуар</span><h3>Набор пиал</h3><p>Небольшие чаши для уютной домашней дегустации.</p><b>950 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Набор пиал" data-price="950">В корзину</button>
           </article>
           <article class="product-card reveal" data-category="set">
             <img src="assets/images/games-thumb.webp" alt="Подарочный набор" />
-            <span>набор</span><h3>Стартовый чайный набор</h3><p>Чай, пиалы и базовый аксессуар для первого домашнего ритуала.</p><b>2600 ₽</b>
+            <span>набор</span><h3>Стартовый чайный набор</h3><p>Чай, пиалы и базовый аксессуар — хорошая отправная точка для дома.</p><b>2600 ₽</b>
             <button class="btn btn-primary" data-add-cart data-name="Стартовый чайный набор" data-price="2600">В корзину</button>
           </article>
         </div>
@@ -132,12 +140,14 @@
     </div>
   </aside>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-row">
-      <a class="footer-logo" href="index.html#top" aria-label="Я Бао Завари"><img src="assets/icons/logo.svg" alt="Я Бао Завари" width="140" /></a>
+      <a class="footer-logo" href="index.html#top" aria-label="Я Бао Завари">
+        <img src="assets/icons/logo.svg" alt="Я Бао Завари" width="140" />
+      </a>
       <div class="footer-copy">
         <p>© <span data-start-year>2024</span>–<span data-current-year>2026</span> Я Бао Завари. Все права защищены.</p>
-        <p>Челябинск, Кирова, 94 · интернет-каталог чая и аксессуаров.</p>
+        <p>Каталог чая и аксессуаров с возможностью собрать доставку.</p>
       </div>
       <div class="footer-links">
         <a href="privacy.html">Политика конфиденциальности</a>
