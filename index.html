@@ -22,9 +22,11 @@
       <a href="#rituals">Форматы</a>
       <a href="#ceremony">Церемонии</a>
       <a href="#menu">Меню</a>
+      <a href="catalog.html">Каталог</a>
       <a href="#gallery">Атмосфера</a>
       <a href="#contacts">Контакты</a>
     </nav>
+    <a class="header-phone" href="tel:+79995847290">+7 999 584-72-90</a>
     <a class="header-cta" href="#booking">Записаться</a>
   </header>
 
@@ -40,8 +42,9 @@
           <h1>Место, где чай становится поводом замедлиться</h1>
           <p>Китайский чай, чайные церемонии, настолки и уютные вечера в тёплом полуподвальном пространстве на Кирова, 94.</p>
           <div class="hero-actions">
-            <a href="#booking" class="btn btn-primary">Записаться на церемонию</a>
-            <a href="#menu" class="btn btn-ghost">Выбрать чай</a>
+            <button class="btn btn-primary" type="button" data-open-modal="ceremony">Записаться на церемонию</button>
+            <button class="btn btn-ghost" type="button" data-open-modal="table">Забронировать столик</button>
+            <a href="catalog.html" class="btn btn-ghost">Каталог чая</a>
           </div>
           <div class="stats" aria-label="Ключевая информация">
             <div><b>5.0</b><span>рейтинг</span></div>
@@ -69,9 +72,24 @@
       <div class="container split">
         <div class="section-head reveal">
           <div class="eyebrow"><span></span> первое впечатление</div>
-          <h2>Не ресторанная строгость, а живой чайный подвал с характером</h2>
+          <h2>Чайный клуб, куда приходят не спешить</h2>
         </div>
-        <p class="big-text reveal">Сайт построен вокруг настоящей атмосферы: тёплый свет, фактурное дерево, чайная доска, восточные детали, люди за столом и ощущение места, куда приходят не спешить.</p>
+        <p class="big-text reveal">Здесь китайский чай становится поводом встретиться, выдохнуть и попробовать новый вкус. Без ресторанной строгости — только тёплый свет, дерево, чайная доска, восточные детали и живое общение за столом.</p>
+      </div>
+    </section>
+
+    <section class="section three-d-showcase" id="visuals">
+      <div class="container three-d-grid">
+        <div class="three-d-copy reveal">
+          <div class="eyebrow"><span></span> 3D-атмосфера</div>
+          <h2>Предметы, которые сразу говорят: здесь заваривают по-настоящему</h2>
+          <p>Для сайта добавлены лёгкие 3D-стилизованные объекты без фона: чашка с паром, чабань и чайник. Они поддерживают атмосферу, но не спорят с настоящими фотографиями чайной.</p>
+        </div>
+        <div class="three-d-objects reveal" aria-label="3D-объекты чайной тематики">
+          <img class="obj obj-mug" src="assets/3d/mug-steam.svg" alt="3D чашка с дымом" />
+          <img class="obj obj-chaban" src="assets/3d/chaban.svg" alt="3D чабань без фона" />
+          <img class="obj obj-teapot" src="assets/3d/teapot.svg" alt="3D чайник без фона" />
+        </div>
       </div>
     </section>
 
@@ -108,7 +126,7 @@
             <li>погружение в сорта и способы заваривания</li>
             <li>живой сценарий без музейной скуки</li>
           </ul>
-          <a href="#booking" class="btn btn-primary">Хочу церемонию</a>
+          <button class="btn btn-primary" type="button" data-open-modal="ceremony">Хочу церемонию</button>
         </div>
       </div>
     </section>
@@ -119,6 +137,7 @@
           <div class="eyebrow"><span></span> меню по настроению</div>
           <h2>Выбирай не сорт, а состояние</h2>
         </div>
+        <div class="catalog-teaser reveal"><a href="catalog.html" class="btn btn-primary">Перейти в интернет-каталог</a><p>Чаи и аксессуары можно добавить в корзину и оформить доставку.</p></div>
         <div class="menu-tabs reveal" role="tablist" aria-label="Фильтр меню">
           <button class="active" data-filter="all">всё</button>
           <button data-filter="deep">глубже</button>
@@ -180,15 +199,14 @@
         <div>
           <div class="eyebrow"><span></span> запись</div>
           <h2>Забронируй вечер за чайным столом</h2>
-          <p>Оставь заявку на церемонию, встречу компанией или уточни, какой чай выбрать. После отправки сайт сформирует готовое сообщение — его можно сразу скопировать и отправить администратору.</p>
+          <p>Выберите быстрый сценарий: чайная церемония или столик для компании. Формы открываются в модальном окне и формируют готовую заявку для администратора.</p>
+          <div class="booking-actions"><button class="btn btn-primary" type="button" data-open-modal="ceremony">Заявка на церемонию</button><button class="btn btn-ghost" type="button" data-open-modal="table">Забронировать столик</button></div>
         </div>
-        <form class="form" data-form>
-          <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required /></label>
-          <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="@username или телефон" required /></label>
-          <label><span>Формат</span><select name="format"><option>Чайная церемония</option><option>Стол для компании</option><option>Подобрать чай</option><option>Чай с собой / доставка</option></select></label>
-          <button class="btn btn-primary" type="submit">Отправить заявку</button>
-          <small data-form-status>Заполните форму — мы подготовим текст заявки.</small>
-        </form>
+        <div class="booking-side-card">
+          <img src="assets/3d/mug-steam.svg" alt="Чашка с паром" />
+          <b>Заявка без перезагрузки страницы</b>
+          <p>После заполнения можно скопировать текст заявки или сразу открыть WhatsApp/Telegram, если подключить реальные ссылки.</p>
+        </div>
       </div>
     </section>
 
@@ -197,22 +215,21 @@
         <div class="contact-info reveal">
           <div class="eyebrow"><span></span> как найти</div>
           <h2>Кирова, 94<br>Челябинск</h2>
-          <p>Мы находимся на Кирова, 94. Постройте маршрут в 2ГИС перед визитом: так проще найти вход и проверить актуальный режим работы.</p>
+          <p>Мы находимся на Кирова, 94. Постройте маршрут в удобной карте перед визитом: так проще найти вход и проверить актуальный режим работы.</p>
           <div class="contact-meta">
             <span>Чай с собой: от 200 ₽</span>
             <span>Церемонии: от 2500 ₽</span>
-            <span>Режим работы: уточняйте в 2ГИС</span>
+            <span>Телефон: +7 999 584-72-90</span>
+            <span>Режим работы: 10:00–01:00</span>
           </div>
           <div class="contact-actions">
             <a class="btn btn-primary" href="https://2gis.ru/chelyabinsk/geo/70000001110715460" target="_blank" rel="noopener">Открыть в 2ГИС</a>
-            <a class="btn btn-ghost" href="#booking">Записаться</a>
+            <a class="btn btn-ghost" href="https://yandex.ru/maps/?text=%D0%AF%20%D0%91%D0%B0%D0%BE%20%D0%97%D0%B0%D0%B2%D0%B0%D1%80%D0%B8%20%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%20%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2094" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
+            <button class="btn btn-ghost" type="button" data-open-modal="table">Забронировать столик</button>
           </div>
         </div>
-        <div class="map-card reveal" data-tilt>
-          <div class="map-grid-lines"></div>
-          <div class="pin"><span></span></div>
-          <b>Я Бао Завари</b>
-          <p>чай · церемонии · настолки</p>
+        <div class="yandex-map-card reveal">
+          <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%AF%20%D0%91%D0%B0%D0%BE%20%D0%97%D0%B0%D0%B2%D0%B0%D1%80%D0%B8%20%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%20%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2094&z=16" loading="lazy" title="Я Бао Завари на Яндекс Картах"></iframe>
         </div>
       </div>
     </section>
@@ -229,11 +246,49 @@
       </div>
       <div class="footer-links">
         <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="catalog.html">Интернет-каталог</a>
         <a href="https://2gis.ru/chelyabinsk/geo/70000001110715460" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+        <a href="https://yandex.ru/maps/?text=%D0%AF%20%D0%91%D0%B0%D0%BE%20%D0%97%D0%B0%D0%B2%D0%B0%D1%80%D0%B8%20%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%20%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2094" target="_blank" rel="noopener">Яндекс Карты</a>
         <a href="#top">Наверх</a>
       </div>
     </div>
   </footer>
+
+  <div class="modal" data-modal="ceremony" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="ceremony-title">
+      <button class="modal-close" type="button" data-modal-close aria-label="Закрыть">×</button>
+      <div class="eyebrow"><span></span> заявка</div>
+      <h2 id="ceremony-title">Чайная церемония</h2>
+      <p>Оставьте контакты, удобный день и количество гостей. Форма сформирует сообщение для администратора.</p>
+      <form class="form modal-form" data-request-form data-request-type="Чайная церемония">
+        <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required /></label>
+        <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="+7 или @username" required /></label>
+        <label><span>Дата и время</span><input type="text" name="date" placeholder="Например: пятница, 19:00" /></label>
+        <label><span>Гостей</span><select name="guests"><option>1 человек</option><option>2 человека</option><option>3–4 человека</option><option>5+ человек</option></select></label>
+        <button class="btn btn-primary" type="submit">Сформировать заявку</button>
+        <small data-request-status>После отправки появится готовый текст заявки.</small>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="table" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="table-title">
+      <button class="modal-close" type="button" data-modal-close aria-label="Закрыть">×</button>
+      <div class="eyebrow"><span></span> бронь</div>
+      <h2 id="table-title">Забронировать столик</h2>
+      <p>Подойдёт для компании, настолок, работы с ноутбуком или спокойного вечера за чаем.</p>
+      <form class="form modal-form" data-request-form data-request-type="Бронь столика">
+        <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required /></label>
+        <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="+7 или @username" required /></label>
+        <label><span>Когда прийти</span><input type="text" name="date" placeholder="Сегодня / завтра / дата и время" /></label>
+        <label><span>Гостей</span><select name="guests"><option>1–2 гостя</option><option>3–4 гостя</option><option>5–6 гостей</option><option>7+ гостей</option></select></label>
+        <button class="btn btn-primary" type="submit">Сформировать бронь</button>
+        <small data-request-status>После отправки появится готовый текст брони.</small>
+      </form>
+    </div>
+  </div>
 
   <div class="lightbox" data-lightbox aria-hidden="true">
     <button type="button" aria-label="Закрыть" data-close>×</button>
